@@ -14,7 +14,7 @@ const contentTypes = {
     ".js": "text/javascript",
     ".json": "application/json",
   };
-  let arrmassege=[
-    ...JSON.parse(fs.readFileSync(path.join(__dirname,"massage.json"),"utf-8"))
+  let arrcalc=[
+    ...JSON.parse(fs.readFileSync(path.join(__dirname,"calulator.json"),"utf-8"))
   ];
-  module.exports={port,contentTypes,arrmassege};
+  module.exports={port,contentTypes,arrcalc};
