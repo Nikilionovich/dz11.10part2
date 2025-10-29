@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Мой первый пост",
+    "content": "Это содержание моего первого поста в блоге.",
+    "author": "Пользователь",
+    "createdAt": "2025-010-30T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "awdawd",
+    "content": "awdaw",
+    "author": "dawdawd",
+    "createdAt": "2025-10-24T22:06:37.119Z"
+  },
+  {
+    "id": 3,
+    "title": "jgyjgyj",
+    "content": "gyjg",
+    "author": "jgyjgyj",
+    "createdAt": "2025-10-24T22:07:08.957Z"
+  },
+  {
+    "id": 4,
+    "title": "123123",
+    "content": "123123",
+    "author": "123123",
+    "createdAt": "2025-10-24T22:08:04.653Z"
+  },
+  {
+    "id": 5,
+    "title": "фцвфцвф",
+    "content": "фцвфцв",
+    "author": "фцвфцв",
+    "createdAt": "2025-10-24T22:16:26.089Z"
+  }
+]
