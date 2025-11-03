@@ -17,4 +17,7 @@ const contentTypes = {
   let arrcalc=[
     ...JSON.parse(fs.readFileSync(path.join(__dirname,"calulator.json"),"utf-8"))
   ];
-  module.exports={port,contentTypes,arrcalc};
+  let arrhistory=[
+     ...JSON.parse(fs.readFileSync(path.join(__dirname,"gistory.json"),"utf-8"))
+  ]
+  module.exports={port,contentTypes,arrcalc,arrhistory};

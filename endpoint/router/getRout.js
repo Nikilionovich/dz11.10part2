@@ -7,10 +7,14 @@ const parsedname=url.parse(req.url,true);
          res.writeHead(302,{location:"/index.html"})
          res.end();
          break;
-         case "/api/messages":
+         case "/list-calc":
+            res.writeHead(302, { Location: "/html/listcalc.html" });
+             res.end();
             break;
-            case"/api/messages/username":
-            break;
+        case"/complex-calc":
+        res.writeHead(302, { Location: "/html/complexcalc.html" });
+             res.end();
+        break;
      default:
         defaulteconroller(req,res)
          break;
