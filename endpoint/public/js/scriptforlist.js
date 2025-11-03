@@ -1,14 +1,22 @@
-let listofnum=[];
-document.getElementById("forlist4").addEventListener("click",()=>{
-const obj={
-     A:forlist1.value,
-      B:forlist2.value,
-      OP:forlist3.value
-}
-listofnum.push(obj);
+let listofnum = [];
+document.getElementById("forlist4").addEventListener("click", () => {
+  const obj = {
+    A: forlist1.value,
+    B: forlist2.value,
+    OP: forlist3.value
+  }
+  listofnum.push(obj);
 })
-forlist5.addEventListener("click",()=>{
-postreqservforlist("/list-calc")
+document.getElementById("deletehis1").addEventListener("click", async () => {
+  const res = await fetch("/", {
+    method: "DELETE"
+  })
+  if (res.ok) {
+    alert("алл гуд")
+  }
+})
+forlist5.addEventListener("click", () => {
+  postreqservforlist("/list-calc")
 })
 const getreqserver = async (reqpath) => {
   const res = await fetch(reqpath);
@@ -16,12 +24,12 @@ const getreqserver = async (reqpath) => {
   await crenderSortedAr(data);
 }
 const postreqservforlist = async (reqpath) => {
-  
+
   const res = await fetch(reqpath, {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify(
-     listofnum
+      listofnum
     )
   });
   if (res.ok) {
@@ -35,10 +43,10 @@ const postreqservforlist = async (reqpath) => {
 async function crenderSortedAr(data) {
   const list = document.querySelector("#output");
   list.textContent = "";
-for (const key of data.sum) {
-   render(key);
-}
-    
+  for (const key of data.sum) {
+    render(key);
+  }
+
 }
 const render = (data) => {
   const list = document.querySelector("#output");

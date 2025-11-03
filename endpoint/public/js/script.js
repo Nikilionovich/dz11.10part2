@@ -1,6 +1,14 @@
 document.getElementById("senderqtoserv").addEventListener("click", () => {
   postreqservforcalc("/calc");
 })
+document.getElementById("deletehis1").addEventListener("click", async()=>{
+const res=await fetch("/",{
+  method:"DELETE"
+})
+if (res.ok) {
+  alert("алл гуд")
+}
+})
 const getreqserver = async (reqpath) => {
   const res = await fetch(reqpath);
   const data = await res.json();

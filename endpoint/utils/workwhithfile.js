@@ -33,7 +33,6 @@ const checkrepeatlistcalc=(mass)=>{
     let sum=[];
 for (const el of mass) {
         sum.push(checkrepeatcalc(el.A, el.B, el.OP));
-        console.log(sum);
     }
     
     return sum;
